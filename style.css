@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+}
+.header{
+    text-align: center;
+    margin-top: 30px;
+}
+.header img{
+    width: 250px;
+    height: auto;
+}
+.menu svg{
+    background-color: #8c0d0d;
+    padding: 10px 10px;
+}
+.nav-bar{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.nav-bar div{
+    margin-right: 10px;
+    gap: 20px;
+}
+.nav-bar a{
+    /* margin-right: 20px; */
+    font-size: small;
+    color: black;
+    text-decoration: none;
+}
+.content{
+    padding: 0px 100px 0px 100px;
+}
+.ads img{
+    max-width: 100%;
+}
