@@ -29,7 +29,7 @@ body{
     text-decoration: none;
 }
 .content{
-    padding: 0px 100px 0px 100px;
+    padding: 0px 250px 0px 250px;
     background-color: #eeeeee;
 }
 .ads img{
@@ -38,19 +38,22 @@ body{
 .heading{
     display: flex;
     gap: 10px;
+    position: relative;
+    overflow: hidden;
 }
 .heading-item{
-    aspect-ratio: 4 / 3;
-    width: 300px;
-    height: 400px;
+    /* aspect-ratio: 4 / 3; */
+    /* width: 300px; */
+    height: 450px;
+    position: relative;
     /* background-color: #34495e; */
 }
 .heading-item img{
     object-fit: cover;
     width: 100%;
     height: 100%;
-    filter: blur(1px);
-    -webkit-filter: blur(1px);
+    /* filter: blur(1px);
+    -webkit-filter: blur(1px); */
     /* filter: grayscale(20%);
     -webkit-filter: grayscale(20%); */
     
@@ -58,12 +61,11 @@ body{
 .heading-item-footer{
     position: absolute;
     bottom: 0;
-    /* left: 0; */
+    left: 0;
     /* margin-bottom: -50px;
     margin-left: 110px; */
     padding: 30px 20px 20px 20px;
-    margin-bottom: -80px;
-    width: 270px;
+    /* margin-bottom: -80px; */
 }
 .title-header{
     background-color: #8c0d0d;
