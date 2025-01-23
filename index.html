@@ -5,17 +5,18 @@
     <meta name="viewport" id="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
     <title>DAP News - The Best Breaking News in Cambodia, Breaking By Soy Sopheap</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <script src="tailwind.js"></script>
 </head>
 
 <body>
-    <div class="header">
+    <div class="flex justify-center mt-4">
         <a href="http://127.0.0.1:5500/index.html">
             <img src="assets/header.png"></img>
         </a>
     </div>
-    <div class="nav-bar">
-        <div class="menu">
+    <div class="flex justify-start gap-4 items-center">
+        <div class="p-2 bg-red-700">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
                 <title>menu-8</title>
                 <g fill="#ffffff" stroke-linejoin="round" stroke-linecap="round">
@@ -28,52 +29,94 @@
                 </g>
             </svg>
         </div>
-        <a href="https://dap-news.com/category/dailyevent">ព្រឹត្តិការណ៍សំខាន់ប្រចាំថ្ងៃ</a>
-        <a href="https://dap-news.com/category/dailyevent">ព័ត៌មានចុងក្រោយ</a>
-        <a href="https://dap-news.com/category/dailyevent">ព័ត៌មានជាតិ</a>
-        <a href="https://dap-news.com/category/dailyevent">សេដ្ឋកិច្ច</a>
-        <a href="https://dap-news.com/category/dailyevent">ព័ត៌មានអន្តរជាតិ</a>
-        <a href="https://dap-news.com/category/dailyevent">នយោបាយ</a>
+        <a class="text-xs" href="pages/daily.html">ព្រឹត្តិការណ៍សំខាន់ប្រចាំថ្ងៃ</a>
+        <a class="text-xs" href="lyheang.html">ព័ត៌មានចុងក្រោយ</a>
+        <a class="text-xs" href="https://dap-news.com/category/dailyevent">ព័ត៌មានជាតិ</a>
+        <a class="text-xs" href="https://dap-news.com/category/dailyevent">សេដ្ឋកិច្ច</a>
+        <a class="text-xs" href="https://dap-news.com/category/dailyevent">ព័ត៌មានអន្តរជាតិ</a>
+        <a class="text-xs" href="https://dap-news.com/category/dailyevent">នយោបាយ</a>
     </div>
-    <div class="content">
-        <div class="ads">
+    <div class="bg-[#eeeeee] px-50 mt-2">
+        <div class="flex flex-col gap-y-2">
             <img src="assets/water.png" />
             <img src="assets/naga.gif" />
             <img src="assets/okide.png" />
         </div>
-        <div class="heading">
-            <div class="heading-item">
-                <img src="assets/headings/water.jpg" />
-                <div class="heading-item-footer">
-                    <span class="title-header">អត្ថបទស្រាវជ្រាវ (scholar)</span>
-                    <span class="title-full-header"><b>បញ្ហាវិបត្តិទឹក! ទឹកសាបក្នុងសតវត្សន៍ទី២១</b></span>
+        <div class="relative flex gap-2 mt-1">
+            <div
+                class="duration-300 ease-in-out bg-slate-300 bg-blend-multiply hover:bg-blend-multiply hover:bg-white h-96 w-60 bg-[url(assets/headings/water.jpg)] bg-center bg-local relative hover:cursor-pointer">
+                <div class="absolute inset-x-0 bottom-0 gap-2 p-2">
+                    <div class="flex">
+                        <p class="text-white text-[8px] bg-red-700 p-1">អត្ថបទស្រាវជ្រាវ (scholar)</p>
+                    </div>
+                    <p class="text-white text-lg font-bold drop-shadow-lg">បញ្ហាវិបត្តិទឹក! ទឹកសាបក្នុងសតវត្សន៍ទី២១</p>
                 </div>
             </div>
-            <div class="heading-item">
-                <img src="assets/headings/russia.jpg" />
-                <div class="heading-item-footer">
-                    <span class="title-header">ព័ត៌មានអន្តរជាតិ</span>
-                    <span class="title-full-header"><b>អាមេរិកបង្កើតបញ្ហា, Ukraine ជាសាច់ដុំមហារីក
-                            មិនងាយព្យាបាលសម្រាប់រុស្ស៊ី!</b></span>
+            <div class="h-96 w-60 bg-[url(assets/headings/russia.jpg)] bg-center bg-local bg-blend-darken relative">
+                <div class="absolute inset-x-0 bottom-0 gap-2 p-2">
+                    <div class="flex">
+                        <p class="text-white text-[8px] bg-red-700 p-1 ">អត្ថបទស្រាវជ្រាវ (scholar)</p>
+                    </div>
+                    <p class="text-white text-lg font-bold drop-shadow-lg">បញ្ហាវិបត្តិទឹក! ទឹកសាបក្នុងសតវត្សន៍ទី២១</p>
                 </div>
             </div>
-            <div class="heading-item">
-                <img src="assets/headings/canal.jpg" />
-                <div class="heading-item-footer">
-                    <span class="title-header">អត្ថបទស្រាវជ្រាវ (scholar)</span>
-                    <span class="title-full-header"><b>ព្រែកជីក “ ហ្វូនណនតេជោ “ ជាកំពែងដ៏រឹងមាំ ក្នុងការធ្វើឲ្យ
-                            ភូមិសាស្រ្តនយោបាយ និង បណ្តាសារភូមិសាស្ត្រ លែងជាសុបិន្តអាក្រក់ និងមានប្រសិទ្ធិភាព
-                            ក្នុងការមកលង អស់រយៈកាល រាប់សិបទស្សវត្សន៍ លើខ្មែរ</b></span>
+            <div class="h-96 w-60 bg-[url(assets/headings/canal.jpg)] bg-center bg-local bg-blend-darken relative">
+                <div class="absolute inset-x-0 bottom-0 gap-2 p-2">
+                    <div class="flex">
+                        <p class="text-white text-[8px] bg-red-700 p-1">អត្ថបទស្រាវជ្រាវ (scholar)</p>
+                    </div>
+                    <p class="text-white text-lg font-bold drop-shadow-lg">បញ្ហាវិបត្តិទឹក! ទឹកសាបក្នុងសតវត្សន៍ទី២១</p>
                 </div>
             </div>
-            <div class="heading-item">
-                <img src="assets/headings/cambodia-lao.jpg" />
-                <div class="heading-item-footer">
-                    <span class="title-header">អត្ថបទស្រាវជ្រាវ (scholar)</span>
-                    <span class="title-full-header"><b>(ផ្សាយឡើងវិញ) ចិន ជាកត្តាឧបសគ្គចម្បង ក្នុងនយោបាយវាតទី អនុត្តរភាព
-                            មកលើឡាវនិងកម្ពុជា ក្នុងបរិបទភូមិសាស្រ្ត យុទ្ធសាស្រ្តរបស់ វៀតណាម!</b></span>
+            <div
+                class="h-96 w-60 bg-[url(assets/headings/cambodia-lao.jpg)] bg-center bg-local bg-blend-darken relative">
+                <div class="absolute inset-x-0 bottom-0 gap-2 p-2">
+                    <div class="flex">
+                        <p class="text-white text-[8px] bg-red-700 p-1">អត្ថបទស្រាវជ្រាវ (scholar)</p>
+                    </div>
+                    <p class="text-white text-lg font-bold drop-shadow-lg">បញ្ហាវិបត្តិទឹក! ទឹកសាបក្នុងសតវត្សន៍ទី២១</p>
                 </div>
             </div>
+        </div>
+        <div class="footer">
+            <div class="footer-info flex">
+                <div>
+                    <img src="assets/header.png" style="width: 350px; height: auto;" />
+                    <span class="footer-text block">Dap News</span>
+                    <div class="flex social">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32">
+                            <title>facebook</title>
+                            <g fill="#95a5a6">
+                                <path
+                                    d="M16,2c-7.732,0-14,6.268-14,14,0,6.566,4.52,12.075,10.618,13.588v-9.31h-2.887v-4.278h2.887v-1.843c0-4.765,2.156-6.974,6.835-6.974,.887,0,2.417,.174,3.043,.348v3.878c-.33-.035-.904-.052-1.617-.052-2.296,0-3.183,.87-3.183,3.13v1.513h4.573l-.786,4.278h-3.787v9.619c6.932-.837,12.304-6.74,12.304-13.897,0-7.732-6.268-14-14-14Z">
+                                </path>
+                            </g>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32">
+                            <title>youtube</title>
+                            <g fill="#95a5a6">
+                                <path
+                                    d="M31.331,8.248c-.368-1.386-1.452-2.477-2.829-2.848-2.496-.673-12.502-.673-12.502-.673,0,0-10.007,0-12.502,.673-1.377,.37-2.461,1.462-2.829,2.848-.669,2.512-.669,7.752-.669,7.752,0,0,0,5.241,.669,7.752,.368,1.386,1.452,2.477,2.829,2.847,2.496,.673,12.502,.673,12.502,.673,0,0,10.007,0,12.502-.673,1.377-.37,2.461-1.462,2.829-2.847,.669-2.512,.669-7.752,.669-7.752,0,0,0-5.24-.669-7.752ZM12.727,20.758V11.242l8.364,4.758-8.364,4.758Z">
+                                </path>
+                            </g>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32">
+                            <title>rss</title>
+                            <g fill="#95a5a6">
+                                <circle cx="6.566" cy="25.434" r="3.566"></circle>
+                                <path
+                                    d="M20.234,29h-5.051c0-6.728-5.454-12.183-12.183-12.183h0v-5.051c9.518,0,17.234,7.716,17.234,17.234Z">
+                                </path>
+                                <path d="M23.8,29c0-11.488-9.312-20.8-20.8-20.8V3c14.359,0,26,11.641,26,26h-5.2Z">
+                                </path>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="footer-bottom"></div>
         </div>
     </div>
 

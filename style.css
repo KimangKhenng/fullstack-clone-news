@@ -13,8 +13,10 @@ body{
     background-color: #8c0d0d;
     padding: 10px 10px;
 }
-.nav-bar{
+.flex{
     display: flex;
+}
+.nav-bar{
     align-items: center;
     gap: 20px;
 }
@@ -36,7 +38,6 @@ body{
     max-width: 100%;
 }
 .heading{
-    display: flex;
     gap: 10px;
     position: relative;
     overflow: hidden;
@@ -83,4 +84,26 @@ body{
     text-shadow: 2px 2px 8px #000000;
     line-height: 25px;
     margin: 0;
+}
+.block{
+    display: block;
+}
+.footer{
+    margin-top: 20px;
+}
+.footer-info{
+    background-color: #444444;
+    gap: 10px;
+    padding: 10px 50px 10px 50px;
+}
+.footer-bottom{
+    background-color: #333333;
+}
+.footer-text{
+    color: #95a5a6;
+    font-size: 15px;
+}
+.social{
+    gap: 5px;
+    margin-top: 20px;
 }
